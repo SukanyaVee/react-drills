@@ -7,10 +7,10 @@ class NewTask extends Component{
             userInput: ''
         }
     }
-    addTask(val)
-    {
-      this.props.tasks.push(val)
-    }
+    // addTask(val)
+    // {
+    //   this.props.tasks.push(val)
+    // }
     render(props)
     {
         return(
