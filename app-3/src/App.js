@@ -6,12 +6,13 @@ class App extends Component {
   constructor()
   {
     super();
-    this.state = {userInput:"", arr: ["pearl","diamond","ruby","sapphire"], list:["pearl","diamond","ruby","sapphire"]}
+    this.state = {userInput:"", arr: ["pearl","diamond","ruby","sapphire"], list=[];}
   }
-  filterwith(val)
+  filterwith(val) 
   {
-    let n=elem.includes(val)
-    this.state.arr.forEach(elem=> {if (n) {this.state.list.push(<h3>{elem}</h3>)}});
+    let n;
+    this.setState{list: [];}
+    this.state.arr.forEach(elem=> {if (n=elem.includes(val)) {this.setState({list:[...this.state.list, '<h3>{elem}</h3>')}}});
   }
   render() {
     return (
